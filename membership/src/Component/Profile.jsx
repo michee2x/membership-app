@@ -8,7 +8,7 @@ const Profile = () => {
 useEffect(() => {
   const setUserProfile = async () => {
 try{
-  const res = await fetch("",{
+  const res = await fetch("https://membership-backend-5qrm.onrender.com/userprof",{
 credentials:"include"
 })
 
