@@ -26,7 +26,7 @@ export const editprofile = async (req, res) => {
                 hashedPassword = hashedpassword
             }
         }else{
-            res.status(401).json({error:"passwords are thesame"})
+            return res.status(401).json({error:"passwords are thesame"})
         }
 
         if(user){
@@ -34,8 +34,8 @@ export const editprofile = async (req, res) => {
                 const userId = user.profilepic.split("/").pop().split(".")[0]
                 await cloudinary.uploader.destroy(userId)
             }
-            const res = await cloudinary.uploader.upload(newPath)
-            const imgId = res.secure_url
+            const resp = await cloudinary.uploader.upload(newPath)
+            const imgId = resp.secure_url
             img = imgId
         }
         const newUserInfo = {
