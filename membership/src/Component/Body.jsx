@@ -39,11 +39,12 @@ if(!loggedUser){
 <div className='w-screen h-full'>
 <div style={{backgroundImage:"url(https://i.imgur.com/atBPDbj.jpeg)", backgroundPosition:'center', backgroundSize:'cover'}} className="text-center mt-12 mb-8 relative w-full mx-auto h-[20rem] rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
 <div className='w-full relative h-full '>
-      <h2 data-aos="fade-up" className="mb-3 text-lg mx-auto text-white max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Alex Terrible's VIP fan membership Card Signup</h2>
-            <p data-aos="fade-down" className="mb-3 w-full font-bold translate-x-[50%] text-blue-400 text-xs bottom-0 absolute">
-              sign up for membership plans and enjoy its benefit
-            </p>
+      <h2 data-aos="fade-up" className="mb-3 translate-x-[50%] bottom-0 absolute text-lg mx-auto text-white max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Alex Terrible's VIP fan membership Card Signup</h2>
+            
 </div>
+<p data-aos="fade-down" className="mb-3 font-bold max-w-md mt-3 mx-auto text-blue-400 text-xs ">
+              Here are the different categories of Alex Terrible's VIP fan membership cards, along with their prices and benefits:
+            </p>
             
 </div>
 <div className='grid h-full w-full pt-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center '>
