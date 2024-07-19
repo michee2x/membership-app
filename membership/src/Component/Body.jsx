@@ -13,7 +13,7 @@ const [data, setData] = useState([
         "Personalized signed photo of Alex Terrible", "Access to exclusive fan Content", "10% discount on merchandise"
     ]},
     {plan:"Silver Membership", price:450, benefits:[
-        "All Basic Fan Card Benefits", "Early access to contert tickets", "Signed CD or Vinyl", "Personalized thank-you video from Alex"
+        "All Basic Fan Card Benefits", "Early access to concert tickets", "Signed CD or Vinyl", "Personalized thank-you video from Alex"
     ]},
     {plan:"Gold Membership", price:600, benefits:[
         "All silver Membership benefits", "Meet-and-greet at a concert (one event)", "Signed guitar pick or drumstick", "Exclusive Gold Membership t-shirt"
