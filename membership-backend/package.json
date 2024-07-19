@@ -4,7 +4,7 @@
   "description": "backend",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server.mjs"
+    "server": "node server.mjs"
   },
   "author": "",
   "license": "ISC",
