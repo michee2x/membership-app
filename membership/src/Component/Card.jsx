@@ -13,7 +13,7 @@ const Card = ({content}) => {
   return (
     
 
-<div data-aos="fade-up" data-aos-duration="3000" class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-black/20 shadow-md sm:p-8 dark:bg-gray-900 dark:border-gray-700">
+<div data-aos="fade-up" data-aos-duration="3000" class="w-[70%] mx-auto p-4 bg-white border border-gray-200 rounded-lg shadow-black/20 shadow-md sm:p-8 dark:bg-gray-900 dark:border-gray-700">
 <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">{content.plan}</h5>
 <div class="flex items-baseline text-gray-900 dark:text-white">
 <span class="text-3xl md:text-5xl font-semibold">$</span>
