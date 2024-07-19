@@ -46,6 +46,7 @@ const Editprofile = () => {
         if(res.ok){
         const data = await res.json()
         const newUser = data.newUserInfo
+              localStorage.setItem("loggedUser", JSON.stringify(newUser))
         setNavigate(true)
         }
 
