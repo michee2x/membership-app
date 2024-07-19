@@ -7,8 +7,8 @@ export const  generateTokenAndSetCookie = (payload, res) => {
     res.cookie("blogroidCookie", token, {
         maxAge: 15 * 24 * 60 * 60 * 1000,
         httpOnly:true,
-        sameSite:"Strict",
-        secure:false
+        sameSite:"None",
+        secure:true
     })
 
     } catch (error){
