@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Aos from "aos"
 import "aos/dist/aos.css" 
 
 const Footer = () => {
+useEffect(() => {
+        Aos.init({duration:2000})
+    }, [])
   return (
-<footer className="bg-white mb-5 rounded-lg shadow dark:bg-gray-900 m-4">
+<footer data-aos="fade-up" className="bg-white mb-5 rounded-lg shadow dark:bg-gray-900 m-4">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
