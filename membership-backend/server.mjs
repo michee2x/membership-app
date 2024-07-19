@@ -25,7 +25,7 @@ dotenv.config()
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({credentials:true, origin:"https://slaughter-to-prevail.onrender.com", methods:["POST", "GET"]}))
+app.use(cors({credentials:true, origin:["https://slaughter-to-prevail.onrender.com", "https://membership-fm1j08zs4-michael-xarvyns-projects.vercel.app"], methods:["POST", "GET"]}))
 
 //Create Routes for the server
 app.use("/auth", authRoute)
