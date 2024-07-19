@@ -44,7 +44,7 @@ if(!loggedUser){
 </div>
             
 </div>
-<p data-aos="fade-up" className="mb-5 font-bold max-w-md mt-3 mx-auto text-blue-400 text-xs ">
+<p data-aos="fade-up" className="mb-5 font-bold w-full px-7 mt-3 text-blue-300 text-xs ">
               Here are the different categories of Alex Terrible's VIP fan membership cards, along with their prices and benefits:
             </p>
 <div className='grid h-full w-full pt-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center '>
