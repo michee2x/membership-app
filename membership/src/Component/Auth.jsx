@@ -39,7 +39,7 @@ if(navigate){
   return (
     <section className="bg-gray-50 w-full  h-screen dark:bg-gray-900">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="#" className="flex flex-col items-center mb-6 text-xl font-semibold text-gray-900 dark:text-white">
+      <a href="#" className="flex flex-col items-center gap-3 mb-6 text-xl font-semibold text-gray-900 dark:text-white">
           <img className="w-24 h-24 object-cover object-center rounded-full mr-2" src="https://i.imgur.com/atBPDbj.jpeg" alt="logo" />
           Slaughter to prevail    
       </a>
