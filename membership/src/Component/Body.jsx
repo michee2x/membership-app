@@ -37,7 +37,7 @@ if(!loggedUser){
   return (
     
 <div className='w-screen h-full'>
-<div style={{backgroundImage:"url(https://i.imgur.com/atBPDbj.jpeg)", backgroundPosition:'right'}} className="text-center mt-12 mb-8 relative w-full mx-auto h-[20rem] rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
+<div style={{backgroundImage:"url(https://i.imgur.com/atBPDbj.jpeg)", backgroundPosition:'center', backgroundSize:'cover'}} className="text-center mt-12 mb-8 relative w-full mx-auto h-[20rem] rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
 <div className='w-full relative h-full '>
       <h2 data-aos="fade-up" className="mb-3 text-lg mx-auto text-white max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Alex Terrible's VIP fan membership Card Signup</h2>
             <p data-aos="fade-down" className="mb-3 w-full font-bold translate-x-[50%] text-blue-400 text-xs bottom-0 absolute">
