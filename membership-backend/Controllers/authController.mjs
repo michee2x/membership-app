@@ -1,4 +1,4 @@
-import User from "../models/User.mjs"
+import Member from "../models/User.mjs"
 import { sendMail } from "../Util/SendMail.mjs"
 import { SignInTemplate, LogInTemplate } from "../Templates/templates.mjs"
 import bcrypt from "bcryptjs"
@@ -8,7 +8,7 @@ export const login = async (req, res) => {
     try{
 
         const {email, password} = req.body
-        const foundUser = await User.findOne({email:email})
+        const foundUser = await Member.findOne({email:email})
         if(!foundUser){
             return res.status(401).json({error:"that user is not found"})
         }
@@ -26,13 +26,13 @@ export const login = async (req, res) => {
 export const SignIn = async (req, res) => {
     try{
         const {email, password} = req.body
-        const exists = await User.findOne({email:email})
+        const exists = await Member.findOne({email:email})
         if(exists) {
             return res.status(401).json({error:"user already exists"})
         }
         const salt = await bcrypt.genSalt(10)
         const hashedPassword = await bcrypt.hash(password, salt)
-        const newUser = new User({
+        const newUser = new Member({
             email, password:hashedPassword
         })
         if(newUser){
