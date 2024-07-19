@@ -55,3 +55,19 @@ export const editprofile = async (req, res) => {
         console.log("there is an error in editprofile controller", error)
     }
 }
+
+export const userProfile = async () => {
+try{
+    const id = req.user._id
+
+    const loggedUser = await Member.findById(id)
+
+   if(!loggedUser){
+    return res.status(400).json({error:"error. User not found"})
+}
+
+   res.status(200).json({loggedUser})
+} catch (error){
+   console.log("error in userProfile controller", error)
+}
+}
