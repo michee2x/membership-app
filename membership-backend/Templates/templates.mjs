@@ -57,7 +57,7 @@ export const SignInTemplate = `<!DOCTYPE html>
         <p>Welcome aboard, and we hope you enjoy your experience with us!</p>
 
         <p>Best regards,</p>
-        <a href="www.slaughter-to-prevail.com" style="text-decoration: none;">www.slaughter-to-prevail.com</a>
+        <a href="https://slaughter-to-prevail.onrender.com" style="text-decoration: none;">www.slaughter-to-prevail.com</a>
         <p style="font: 800; color: black; margin-top:16px">From Progress Waidi</p>
     </div>
 </body>
@@ -121,7 +121,7 @@ export const LogInTemplate = `<!DOCTYPE html>
         <p>Welcome aboard, and we hope you enjoy your experience with us!</p>
 
         <p>Best regards,</p>
-        <a href="www.slaughter-to-prevail.com" style="text-decoration: none;">www.slaughter-to-prevail.com</a>
+        <a href="https://slaughter-to-prevail.onrender.com" style="text-decoration: none;">www.slaughter-to-prevail.com</a>
         <p style="font: 800; color: black; margin-top:16px">From Progress Waidi</p>
     </div>
 </body>
