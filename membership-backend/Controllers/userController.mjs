@@ -49,7 +49,7 @@ export const editprofile = async (req, res) => {
         }
 
         await Member.findByIdAndUpdate(id, newUserInfo)
-        res.status(200).json({mssage:"edit successfull"})
+        res.status(200).json({newUserInfo})
 
     }catch(error) {
         console.log("there is an error in editprofile controller", error)
