@@ -37,7 +37,7 @@ const Editprofile = () => {
         form.append("img", file)
 
         console.log(data,form)
-        const res = await fetch("http://localhost:9000/editprofile", {
+        const res = await fetch("https://membership-backend-5qrm.onrender.com/editprofile", {
             method:"POST",
             body:form,
             credentials:"include"
