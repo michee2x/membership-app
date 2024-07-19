@@ -45,7 +45,7 @@ export const SignInTemplate = `<!DOCTYPE html>
 <body>
     <div class="card">
         <div style="border-radius:200px; height:auto; width:100%; background: #F8FAF5; margin:0 auto;">
-            <img src="https://media.istockphoto.com/id/1160247341/photo/diagram.jpg?s=612x612&w=0&k=20&c=TH_Gv11bMhBeewsayVxIkDlMwnPzgh6pRH8cIFXA4Ro="
+            <img src="https://i.imgur.com/atBPDbj.jpeg"
                 alt="slaughter to prevail alt img" style="border-radius:12px">
         </div>
         <h3>Hey Dear!</h3>
@@ -109,7 +109,7 @@ export const LogInTemplate = `<!DOCTYPE html>
 <body>
     <div class="card">
         <div style="border-radius:200px; height:auto; width:100%; background: #F8FAF5; margin:0 auto;">
-            <img src="https://media.istockphoto.com/id/1160247341/photo/diagram.jpg?s=612x612&w=0&k=20&c=TH_Gv11bMhBeewsayVxIkDlMwnPzgh6pRH8cIFXA4Ro="
+            <img src="https://i.imgur.com/atBPDbj.jpeg"
                 alt="slaughter to prevail alt img" style="border-radius:12px">
         </div>
         <h3>Hey Dear!</h3>
