@@ -39,7 +39,7 @@ if(!loggedUser){
 <div className='w-screen h-full'>
 <div style={{backgroundImage:"url(https://images.unsplash.com/photo-1495387756626-3502f93a197d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxadXpUdU00RnVGa3x8ZW58MHx8fHx8)", backgroundPosition:'right'}} className="text-center mt-12 mb-8 relative w-full mx-auto h-[20rem] rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
 <div className='w-full relative h-full '>
-      <h2 data-aos="fade-up" className="mb-3 text-lg mx-auto bg-gradient-to-t from-blue-500 to-white text-transparent bg-clip-text max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Alex Terrible's VIP fan membership Card Signup</h2>
+      <h2 data-aos="fade-up" className="mb-3 text-lg mx-auto text-gray-100 max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Alex Terrible's VIP fan membership Card Signup</h2>
             <p data-aos="fade-down" className="mb-3 w-full font-bold translate-x-[50%] text-blue-400 text-xs bottom-0 absolute">
               sign up for membership plans and enjoy its benefit
             </p>
