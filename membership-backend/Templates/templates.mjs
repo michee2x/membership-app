@@ -1,4 +1,4 @@
-export const SignInTemplate = ``<!DOCTYPE html>
+export const SignInTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
