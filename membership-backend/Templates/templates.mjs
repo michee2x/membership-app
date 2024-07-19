@@ -1,4 +1,4 @@
-export const SignInTemplate = `<!DOCTYPE html>
+export const SignInTemplate = ``<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@ export const SignInTemplate = `<!DOCTYPE html>
             color: #404F5E;
             font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
             font-size: 20px;
-            margin: 0;
+            margin: 0 0 16px 0;
         }
     
         i {
@@ -38,9 +38,6 @@ export const SignInTemplate = `<!DOCTYPE html>
             padding: 60px;
             border-radius: 4px;
             box-shadow: 0 2px 3px #C8D0D8;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
             margin: 0 auto;
         }
     </style>
@@ -52,16 +49,16 @@ export const SignInTemplate = `<!DOCTYPE html>
                 alt="slaughter to prevail alt img" style="border-radius:12px">
         </div>
         <h3>Hey Dear!</h3>
-        <p>thank you for signing up to slaughter to prevail! Were're excited to have you onboard</p>
-        <p>you are now a legitimate user of our website. Make sure to sign up for a membership plan to access exclusive benefits</p>
+        <p>Thank you for Signing up to slaughter to prevail! We're excited to have you onboard.</p>
+        <p>Purchase a membership plan if to access exclusive benefits.</p>
 
-        <p>if you have any questions or need assistance, feel free to reach out to our support team at ....</p>
+        <p>If you have any questions or need assistance, feel free to reach out to our support team at ....</p>
 
         <p>Welcome aboard, and we hope you enjoy your experience with us!</p>
 
         <p>Best regards,</p>
         <a href="www.slaughter-to-prevail.com" style="text-decoration: none;">www.slaughter-to-prevail.com</a>
-        <p style="font: 800; color: black;">from Progress Waidi</p>
+        <p style="font: 800; color: black; margin-top:16px">From Progress Waidi</p>
     </div>
 </body>
 </html>`
