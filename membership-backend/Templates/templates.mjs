@@ -15,14 +15,14 @@ export const SignInTemplate = `<!DOCTYPE html>
             color: darkblue;
             font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
             font-weight: 900;
-            font-size: 40px;
+            font-size: 20px;
             margin-bottom: 10px;
         }
     
         p {
             color: #404F5E;
             font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-            font-size: 20px;
+            font-size: 14px;
             margin: 0 0 16px 0;
         }
     
@@ -35,7 +35,7 @@ export const SignInTemplate = `<!DOCTYPE html>
     
         .card {
             background: white;
-            padding: 60px;
+            padding: 5px;
             border-radius: 4px;
             box-shadow: 0 2px 3px #C8D0D8;
             margin: 0 auto;
@@ -79,14 +79,14 @@ export const LogInTemplate = `<!DOCTYPE html>
             color: darkblue;
             font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
             font-weight: 900;
-            font-size: 40px;
+            font-size: 15px;
             margin-bottom: 10px;
         }
     
         p {
             color: #404F5E;
             font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-            font-size: 20px;
+            font-size: 14px;
             margin: 0 0 16px 0;
         }
     
@@ -99,7 +99,7 @@ export const LogInTemplate = `<!DOCTYPE html>
     
         .card {
             background: white;
-            padding: 60px;
+            padding: 5px;
             border-radius: 4px;
             box-shadow: 0 2px 3px #C8D0D8;
             margin: 0 auto;
