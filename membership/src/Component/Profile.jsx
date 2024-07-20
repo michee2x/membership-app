@@ -25,6 +25,10 @@ console.log(error)
 setUserProfile()
 
 }, [])
+
+const logout = () => {
+  localStorage.removeItem("loggedUser")
+}
   
   return (
     <div className='w-full h-screen'>
@@ -38,7 +42,7 @@ setUserProfile()
         <p className='text-gray-600 mt-5 font-semibold text-md dark:text-gray-400'>{user?.bio ? user?.bio : "user has no bio yet"}</p>
         <div className='h-60 w-60 mt-5 flex gap-5 rounded-lg shadow-black/30 shadow-md'></div>
         <div className='w-full flex gap-5 justify-center mt-10'>
-          <Link to={"/auth"} className=' shadow-black/30 shadow-md w-32 h-10 bg-gray-900 text-gray-100 rounded-lg bottom-5 flex items-center gap-1 justify-center'><MdLogout /> logout</Link>
+          <Link to={"/auth"} className=' shadow-black/30 shadow-md w-32 h-10 bg-gray-900 text-gray-100 rounded-lg bottom-5 flex items-center gap-1 justify-center' onClick={logout}><MdLogout /> logout</Link>
       <Link to={"/edit"} className=' shadow-black/30 shadow-md w-32 h-10 bg-gray-900 text-gray-100 rounded-lg bottom-15 flex items-center gap-1 justify-center'><MdPerson /> edit</Link>
       
       </div>
