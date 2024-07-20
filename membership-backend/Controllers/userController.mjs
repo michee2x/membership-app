@@ -56,7 +56,7 @@ export const editprofile = async (req, res) => {
     }
 }
 
-export const userProfile = async () => {
+export const userProfile = async (req, res) => {
 try{
     const id = req.user._id
 
