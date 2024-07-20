@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Navigate} from "react-router-dom"
 
 const Auth = () => {
+const [showpass, setShowPass] = useState(false)
 const [logging, setLogging] = useState(false)
 const [login, setLogin] = useState(true)
 const [data, setData] = useState({email:"", password:""})
@@ -55,15 +56,15 @@ if(navigate){
                   </div>
                   <div>
                       <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                      <input type="password" value={data.password} onChange={(e) => setData({...data, password:e.target.value})} required placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                      <input type={showpass ?  "text" : "password"} value={data.password} onChange={(e) => setData({...data, password:e.target.value})} required placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                   </div>
                   <div className="flex items-center justify-between">
                       <div className="flex items-start">
                           <div className="flex items-center h-5">
-                            <input type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" />
+                            <input type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" onClick={() => setShowPass(prev => !prev)}/>
                           </div>
                           <div className="ml-3 text-sm">
-                            <label for="remember" className="text-gray-500 dark:text-gray-300">Remember me</label>
+                            <label for="remember" className="text-gray-500 dark:text-gray-300">{!showpass ? "show password" : "hide password"}</label>
                           </div>
                       </div>
                       <a href="#" className="text-sm text-gray-900 font-medium text-primary-600 hover:underline dark:text-gray-200">Forgot password?</a>
