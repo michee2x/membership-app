@@ -35,7 +35,7 @@ setUserProfile()
           </span>
         <p className='text-gray-700 mt-5 font-bold text-2xl tracking-widest dark:text-gray-300'>{loggedUser?.firstname || loggedUser?.lastname ? `${user?.firstname} ${user?.lastname}` : "user has no name yet"}</p>
         <p className='text-gray-600 mt-2 font-semibold text-md dark:text-gray-400'>{user?.email}</p>
-        <p className='text-gray-600 mt-5 font-semibold text-md dark:text-gray-400'>{user?.bio ? loggedUser?.bio : "user has no bio yet"}</p>
+        <p className='text-gray-600 mt-5 font-semibold text-md dark:text-gray-400'>{user?.bio ? user?.bio : "user has no bio yet"}</p>
         <div className='h-60 w-60 mt-5 flex gap-5 rounded-lg shadow-black/30 shadow-md'></div>
         <div className='w-full flex gap-5 justify-center mt-10'>
           <Link to={"/auth"} className=' shadow-black/30 shadow-md w-32 h-10 bg-gray-900 text-gray-100 rounded-lg bottom-5 flex items-center gap-1 justify-center'><MdLogout /> logout</Link>
