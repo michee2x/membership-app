@@ -31,9 +31,9 @@ setUserProfile()
       <div className='mt-[6rem] relative w-full h-full flex flex-col items-center'>
         <span className={`${!user?.profilepic ? "p-2" : "p-0"} flex justify-center cursor-pointer w-24 shadow-black/30 shadow-md  rounded-full h-24 bg-gray-300`}>
          {!user?.profilepic && <MdPerson className='text-[4.5rem] text-gray-400'/>}
-         {user?.profilepic && (<img src={loggedUser?.profilepic} className='w-full h-full object-center object-cover rounded-full'/>)}
+         {user?.profilepic && (<img src={user?.profilepic} className='w-full h-full object-center object-cover rounded-full'/>)}
           </span>
-        <p className='text-gray-700 mt-5 font-bold text-2xl tracking-widest dark:text-gray-300'>{loggedUser?.firstname || loggedUser?.lastname ? `${user?.firstname} ${user?.lastname}` : "user has no name yet"}</p>
+        <p className='text-gray-700 mt-5 font-bold text-2xl tracking-widest dark:text-gray-300'>{user?.firstname || user?.lastname ? `${user?.firstname} ${user?.lastname}` : "user has no name yet"}</p>
         <p className='text-gray-600 mt-2 font-semibold text-md dark:text-gray-400'>{user?.email}</p>
         <p className='text-gray-600 mt-5 font-semibold text-md dark:text-gray-400'>{user?.bio ? user?.bio : "user has no bio yet"}</p>
         <div className='h-60 w-60 mt-5 flex gap-5 rounded-lg shadow-black/30 shadow-md'></div>
