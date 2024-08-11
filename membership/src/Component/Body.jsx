@@ -3,7 +3,6 @@ import Card from './Card'
 import {Navigate} from "react-router-dom"
 import Aos from "aos"
 import "aos/dist/aos.css"
-import {FaPaypal} from "react-icons/fa"
 
 const Body = ({children}) => {
 const [navigate, setNavigate] = useState(false)
@@ -99,7 +98,7 @@ return (
         </div>
         <div className="flex items-center justify-between">
             <span data-aos="flip-left" className="text-3xl font-bold text-gray-900 dark:text-white">${i.price}</span>
-            <a href="#" className="text-white flex gap-2 items-center justify-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> <FaPaypal /> PayPal</a>
+            <a href="#" className="text-white flex gap-2 items-center justify-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CashApp</a>
         </div>
     </div>
 </div>
