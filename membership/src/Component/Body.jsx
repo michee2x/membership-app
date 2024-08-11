@@ -27,8 +27,8 @@ const [data, setData] = useState([
 ])
 
 const [max, setMax] = useState([
-{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png", rating:"5.0"},
-{name:"silver max", price:170, img:"https://i.imgur.com/oSAluGw.png", rating:"4.2"},
+{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png", rating:"4.5"},
+{name:"silver max", price:700, img:"https://i.imgur.com/oSAluGw.png", rating:"5.0"},
 {name:"white max", price:150, img:"https://i.imgur.com/dG7qVJa.png", rating:"3.0"},
 ])
 
