@@ -28,8 +28,8 @@ const [data, setData] = useState([
 
 const [max, setMax] = useState([
 {name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png"},
-{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png"},
-{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png"},
+{name:"silver max", price:170, img:"https://i.imgur.com/oSAluGw.png"},
+{name:"white max", price:150, img:"https://i.imgur.com/dG7qVJa.png"},
 ])
 
 useEffect(() => {
