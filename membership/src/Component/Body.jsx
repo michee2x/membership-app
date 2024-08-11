@@ -61,6 +61,8 @@ if(!loggedUser){
     </div>
 
 
+<p class="max-w-lg text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">purchase max</p>
+
 
 
 { max.map((i) => {
