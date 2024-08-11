@@ -26,6 +26,11 @@ const [data, setData] = useState([
     ]}
 ])
 
+const [max, setMax] = useState([
+{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png"},
+{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png"},
+{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png"},
+])
 
 useEffect(() => {
         Aos.init({duration:2000})
@@ -58,15 +63,16 @@ if(!loggedUser){
 
 
 
-
+{ max.map((i) => {
+return (
 
 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img className="p-8 rounded-t-lg" src="https://i.imgur.com/gJ6rCv8.png" alt="max image" />
+        <img className="p-8 rounded-t-lg" src={i.img} alt="max image" />
     </a>
     <div className="px-5 pb-5">
         <a href="#">
-            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{i.name}</h5>
         </a>
         <div className="flex items-center mt-2.5 mb-5">
             <div className="flex items-center space-x-1 rtl:space-x-reverse">
@@ -89,13 +95,13 @@ if(!loggedUser){
             <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
         </div>
         <div className="flex items-center justify-between">
-            <span className="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+            <span className="text-3xl font-bold text-gray-900 dark:text-white">${i.price}</span>
             <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">purchase max</a>
         </div>
     </div>
 </div>
 
-
+)})}
 
 
     <div data-aos="fade-up" className='w-full mt-5 p-3 text-center dark:text-white/80 text-gray-900 h-auto'>
