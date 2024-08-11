@@ -27,9 +27,9 @@ const [data, setData] = useState([
 ])
 
 const [max, setMax] = useState([
-{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png", rating:5.0},
-{name:"silver max", price:170, img:"https://i.imgur.com/oSAluGw.png", rating:4.2},
-{name:"white max", price:150, img:"https://i.imgur.com/dG7qVJa.png", rating:3.0},
+{name:"gold max", price:200, img:"https://i.imgur.com/gJ6rCv8.png", rating:"5.0"},
+{name:"silver max", price:170, img:"https://i.imgur.com/oSAluGw.png", rating:"4.2"},
+{name:"white max", price:150, img:"https://i.imgur.com/dG7qVJa.png", rating:"3.0"},
 ])
 
 useEffect(() => {
@@ -61,7 +61,7 @@ if(!loggedUser){
     </div>
 
 
-<p class="max-w-lg mx-auto py-16 text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">purchase max</p>
+<p class="text-center  py-16 text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">purchase max</p>
 
 
 
@@ -70,7 +70,7 @@ return (
 
 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img data-aos="fade" className="p-8 rounded-t-lg" src={i.img} alt="max image" />
+        <img data-aos="zoom-in" className="p-8 rounded-t-lg" src={i.img} alt="max image" />
     </a>
     <div className="px-5 pb-5">
         <a href="#">
