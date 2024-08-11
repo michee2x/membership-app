@@ -61,7 +61,7 @@ if(!loggedUser){
     </div>
 
 
-<p data-aos="flip-left" class="text-center  py-16 text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">purchase max</p>
+<p class="text-center  py-16 text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">purchase max</p>
 
 
 
