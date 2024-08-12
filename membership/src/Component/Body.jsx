@@ -6,6 +6,8 @@ import "aos/dist/aos.css"
 import {FaPaypal} from "react-icons/fa"
 
 const Body = ({children}) => {
+const [obj, setObj] = useState({})
+const [show, setShow] = useState(false)
 const [navigate, setNavigate] = useState(false)
 const loggedUser = JSON.parse(localStorage.getItem("loggedUser"))?.loggedUser
 
@@ -99,12 +101,17 @@ return (
         </div>
         <div className="flex items-center justify-between">
             <span data-aos="flip-left" className="text-3xl font-bold text-gray-900 dark:text-white">${i.price}</span>
-            <a href="#" className="text-white flex gap-2 items-center justify-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><img className="w-8 h-8 rounded-full" src="https://i.imgur.com/SvzAO24.jpeg" alt="max image" /> <FaPaypal /> purchase</a>
+            <a onClick={() => {setObj(i); setShow(prev => !prev)}} className="text-white flex gap-2 items-center justify-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><img className="w-4 h-4 rounded-full" src="https://i.imgur.com/SvzAO24.jpeg" alt="max image" /> <FaPaypal /> purchase</a>
         </div>
     </div>
 </div>
 
 )})}
+
+<div className={`w-full ${show ? "block" : "hidden"} h-full absolute`}>
+<h1>hey </h1>
+
+ </div>
 
 
     <div data-aos="fade-up" className='w-full mt-5 p-3 text-center dark:text-white/80 text-gray-900 h-auto'>
