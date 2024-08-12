@@ -125,7 +125,7 @@ return (
 
 <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
 
-<div class="flex my-10 flex-col items-center pb-10">
+<div class="flex gap-2 flex-col items-center">
         <img data-aos="zoom-in" className="p-8 rounded-t-lg" src={obj && obj.img} alt="max image" />
         <h5 class="mb-1 text-2xl font-medium text-gray-900 dark:text-white">{obj.name}</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Rating:{obj && obj.rating}</span>
