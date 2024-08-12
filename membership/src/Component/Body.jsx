@@ -126,8 +126,8 @@ return (
 <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
 
 <div class="flex my-10 flex-col items-center pb-10">
-        <img class="w-40 h-40 mb-3 rounded-full shadow-lg" src="https://i.imgur.com/gJ6rCv8.png" alt="Bonnie image"/>
-        <h5 class="mb-1 text-2xl font-medium text-gray-900 dark:text-white">Gold Max</h5>
+        <img class="w-40 h-40 mb-3 shadow-lg" src={obj.img} alt="Bonnie image"/>
+        <h5 class="mb-1 text-2xl font-medium text-gray-900 dark:text-white">{obj.name}</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
         <div class="flex mt-4 md:mt-6">
             <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
