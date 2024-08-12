@@ -115,7 +115,7 @@ return (
     </div>
 </div>
 
-<div className={`w-screen bg-blue-500 ${show ? "block" : "hidden"} h-screen`}>
+<div className={`w-screen absolute top-0 bottom-0 right-0 left-0 z-50 bg-blue-500 ${show ? "block" : "hidden"} h-screen`}>
 <h1>hey </h1>
 
  </div>
