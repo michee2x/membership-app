@@ -115,9 +115,38 @@ return (
     </div>
 </div>
 
-<div className={`w-screen absolute top-0 bottom-0 right-0 left-0 z-50 bg-blue-500 ${show ? "block" : "hidden"} h-screen`}>
-<h1>hey </h1>
 
+
+
+
+
+<div className={`w-screen absolute top-0 bottom-0 right-0 left-0 z-50 bg-blue-500 ${show ? "block" : "hidden"} h-screen`}>
+
+
+<div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
+<h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
+Choose payment
+</h5>
+<p className="text-sm font-normal text-gray-500 dark:text-gray-400">Connect with one of our available wallet providers or create a new one.</p>
+<ul className="my-4 space-y-3">
+<li>
+<a className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+<img className="w-4 h-4 rounded-full" src="https://i.imgur.com/SvzAO24.jpeg" alt="max image" />
+<span class="flex-1 ms-3 whitespace-nowrap">CashApp</span>
+<span class="inline-flex items-center justify-center px-2 py-0.5 ms-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
+</a>
+</li>
+
+
+</li>
+<li>
+<a class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+<FaPaypal
+<span class="flex-1 ms-3 whitespace-nowrap">PayPal</span>
+</a>
+</li>
+</ul>
+</div>
  </div>
 
 </>
