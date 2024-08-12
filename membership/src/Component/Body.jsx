@@ -43,8 +43,9 @@ if(!loggedUser){
   return <Navigate to={"/auth"}/>
 }
   return (
+<>
     
-<div className='w-screen relative h-full'>
+<div className={`w-screen ${show ? "hidden" : "block"} h-full`}>
 <div style={{backgroundImage:"url(https://i.imgur.com/atBPDbj.jpeg)", backgroundPosition:'center', backgroundSize:'cover'}} className="text-center mt-12 mb-8 relative w-full mx-auto h-[20rem] rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
 <div className='w-full relative h-full '>
       <h2 data-aos="fade-down" className="mb-3 translate-x-[50%] bottom-0 absolute text-lg mx-auto text-white max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Alex Terrible's VIP fan membership Card Signup</h2>
@@ -108,17 +109,18 @@ return (
 
 )})}
 
-<div className={`w-full z-10 ${show ? "block" : "hidden"} h-full absolute`}>
-<h1>hey </h1>
-
- </div>
-
 
     <div data-aos="fade-up" className='w-full mt-5 p-3 text-center dark:text-white/80 text-gray-900 h-auto'>
         please note that prices and benefits may vary depending on the country, region or promotion.
     </div>
 </div>
 
+<div className={`w-screen bg-blue-500 ${show ? "block" : "hidden"} h-full`}>
+<h1>hey </h1>
+
+ </div>
+
+</>
   )
 }
 
