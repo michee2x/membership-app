@@ -72,7 +72,7 @@ if(!loggedUser){
 { max.map((i) => {
 return (
 
-<div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="w-full max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
         <img data-aos="zoom-in" className="p-8 rounded-t-lg" src={i.img} alt="max image" />
     </a>
