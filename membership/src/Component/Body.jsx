@@ -13,19 +13,19 @@ const loggedUser = JSON.parse(localStorage.getItem("loggedUser"))?.loggedUser
 
 const [data, setData] = useState([
     {plan:"Basic Fan Card", price:300, benefits:[
-        "Personalized signed photo of Alex Terrible", "Access to exclusive fan Content", "10% discount on merchandise"
+        "Personalized signed photo of Romana kalkuhl", "Access to exclusive fan Content", "10% discount on merchandise"
     ]},
     {plan:"Silver Membership", price:450, benefits:[
-        "All Basic Fan Card Benefits", "Early access to concert tickets", "Signed CD or Vinyl", "Personalized thank-you video from Alex"
+        "All Basic Fan Card Benefits", "Early access to concert tickets", "Signed CD or Vinyl", "Personalized thank-you video from Romana"
     ]},
     {plan:"Gold Membership", price:600, benefits:[
         "All silver Membership benefits", "Meet-and-greet at a concert (one event)", "Signed guitar pick or drumstick", "Exclusive Gold Membership t-shirt"
     ]},
     {plan:"Platinum Membership", price:1000, benefits:[
-        "All Gold Membership benefits", "Private Online Q&A session with Alex", "Signed poster or artbook", "Priority access to VIP experience"
+        "All Gold Membership benefits", "Private Online Q&A session with Romana", "Signed poster or artbook", "Priority access to VIP experience"
     ]},
     {plan:"Ultimate Fan Package", price:1500, benefits:[
-        "All Platinum Membership benefits", "Personalized video message from Alex", "Signed Sirenia memorabilia (e.g drumhead, guitar)", "Backstage tour and meet-and-greet at a concert (one event)"
+        "All Platinum Membership benefits", "Personalized video message from Romana", "Signed Sirenia memorabilia (e.g drumhead, guitar)", "Backstage tour and meet-and-greet at a concert (one event)"
     ]}
 ])
 
@@ -65,14 +65,14 @@ if(!loggedUser){
     </div>
 
 
-<p class="text-center  py-16 text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">purchase max</p>
+<p class="text-center hidden py-16 text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">purchase max</p>
 
 
 
 { max.map((i) => {
 return (
 
-<div className="w-full max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="w-full hidden max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
         <img data-aos="zoom-in" className="p-8 rounded-t-lg" src={i.img} alt="max image" />
     </a>
