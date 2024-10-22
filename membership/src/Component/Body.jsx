@@ -48,13 +48,13 @@ if(!loggedUser){
 <div className={`w-screen ${show ? "hidden" : "block"} h-full`}>
 <div style={{backgroundImage:"url(https://i.imgur.com/SgniKuu.jpeg)", backgroundPosition:'center', backgroundSize:'cover'}} className="text-center mt-12 mb-8 relative w-full mx-auto h-[20rem] rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
 <div className='w-full relative h-full '>
-      <h2 data-aos="fade-down" className="mb-3 translate-x-[50%] bottom-0 absolute text-lg mx-auto text-white max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Alex Terrible's VIP fan membership Card Signup</h2>
+      <h2 data-aos="fade-down" className="mb-3 translate-x-[50%] bottom-0 absolute text-lg mx-auto text-white max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700">Romana kalkuhl's VIP fan membership Card Signup</h2>
             
 </div>
             
 </div>
 <p data-aos="fade-up" className="mb-5 font-bold w-full px-7 text-center mt-3 text-gray-700 text-xs dark:text-blue-200">
-              Here are the different categories of Alex Terrible's VIP fan membership cards, along with their prices and benefits:
+              Here are the different categories of Romana kalkuhl's VIP fan membership cards, along with their prices and benefits:
             </p>
 <div className='grid h-full w-full pt-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center '>
       {data.map((e) => {
