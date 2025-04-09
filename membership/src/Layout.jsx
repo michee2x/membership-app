@@ -25,7 +25,7 @@ useEffect(() => {
       
       <div data-aos="slide-left" className='flex w-1/2 gap-3 pl-3 items-center'>
          <Link to={"/"}>
-            <button type="button"  class="py-4 pl-2 text-gray-700 text-md rounded-ss-lg dark:bg-gray-800 dark:text-gray-300">Burning witches</button>
+            <button type="button"  class="py-4 pl-2 text-gray-700 text-md rounded-ss-lg dark:bg-gray-800 dark:text-gray-300">Sabaton</button>
         </Link>
       </div>
       <div className='w-1/2 flex gap-3 justify-end pr-6 items-center'>
