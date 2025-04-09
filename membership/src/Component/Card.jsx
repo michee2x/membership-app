@@ -18,7 +18,7 @@ const Card = ({content}) => {
 <div class="flex items-baseline text-gray-900 dark:text-white">
 <span class="text-3xl md:text-5xl font-semibold">$</span>
 <span class="text-3xl font-extrabold tracking-tight">{content.price}</span>
-<span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+<span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/year</span>
 </div>
 <ul role="list" class="space-y-5 my-7">
 {content.benefits.map((e) => {
