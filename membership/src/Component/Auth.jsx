@@ -41,7 +41,7 @@ if(navigate){
     <section className="bg-gray-50 w-full  h-screen dark:bg-gray-900">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <a href="#" className="flex flex-col items-center gap-3 mb-6 text-xl font-semibold text-gray-900 dark:text-white">
-          <img className="w-24 h-24 object-cover object-center rounded-full mr-2" src="https://i.imgur.com/SgniKuu.jpeg" alt="logo" />
+          <img className="w-24 h-24 object-cover object-center rounded-full mr-2" src="https://i.imgur.com/uu0Qg9x.jpeg" alt="logo" />
           Burning witches    
       </a>
       <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
