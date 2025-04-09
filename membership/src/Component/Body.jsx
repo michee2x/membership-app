@@ -38,7 +38,7 @@ if(!loggedUser){
     
 <div className={`w-screen ${show ? "hidden" : "block"} h-full`}>
 <div style={{backgroundImage:"url(https://i.imgur.com/uu0Qg9x.jpeg)", backgroundPosition:'center', backgroundSize:'cover'}} className="text-center mt-12 mb-8 relative w-full mx-auto h-[20rem] rounded-lg md:p-8" id="about" role="tabpanel" aria-labelledby="about-tab">
-<div className='w-full bg-gradient-to-t from-gray-900/70 to-transparent relative h-full '>
+<div className='w-full bg-gradient-to-t from-gray-900/50 to-transparent relative h-full '>
       <h2 data-aos="fade-down" className="mb-3 translate-x-[50%] bottom-0 absolute text-lg mx-auto text-white max-w-md md:text-2xl font-extrabold tracking-normal pt-5 text-gray-700 px-4">The Sabaton Official Fan Club – “Sabaton Corps”</h2>
             
 </div>
