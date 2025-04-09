@@ -12,8 +12,8 @@ const [navigate, setNavigate] = useState(false)
 const loggedUser = JSON.parse(localStorage.getItem("loggedUser"))?.loggedUser
 
 const [data, setData] = useState([
-    {plan:"Basic Fan Card", price:300, benefits:[
-        "Personalized signed photo of Romana kalkuhl", "Access to exclusive fan Content", "10% discount on merchandise"
+    {plan:"Digital Membership", price:150, benefits:[
+        "Access to exclusive content and behind-the-scenes updates", "Priority access to meet & greet sign-ups and limited merch", "Early ticket access before public sales", "Members-only forum and community", "Access to backstage contest entries", "Personalized digital membership card"
     ]},
     {plan:"Silver Membership", price:450, benefits:[
         "All Basic Fan Card Benefits", "Early access to concert tickets", "Signed CD or Vinyl", "Personalized thank-you video from Romana"
