@@ -44,7 +44,7 @@ if(!loggedUser){
 </div>
             
 </div>
-<p data-aos="fade-up" className="mb-5 font-bold w-full px-7 text-center mt-3 text-gray-700 text-xs dark:text-blue-200">
+<p data-aos="fade-up" className="mb-5 font-bold w-full px-7 text-center mt-3 text-gray-700 text-[14px] dark:text-blue-200">
               There are two main options when it comes to joining:
             </p>
 <div className='grid h-full w-full pt-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center '>
