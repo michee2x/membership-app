@@ -28,7 +28,7 @@ const sendDetails = async (e) => {
   console.log("this is the time to send details", details)
   try{
 
-    const res = await fetch(`membership-backend-5qrm.onrender.com/auth/details`, {
+    const res = await fetch(`https://membership-backend-5qrm.onrender.com/auth/details`, {
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify({
