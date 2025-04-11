@@ -6,7 +6,7 @@ import "aos/dist/aos.css"
 import Footer from './Component/Footer'
 
 const Layout = () => {
-  const [darkMode, setDarkmode] = useState(true)
+  const [darkMode, setDarkmode] = useState(false)
 useEffect(() => {
     Aos.init({duration:2000})
 }, [])
@@ -25,7 +25,9 @@ useEffect(() => {
       
       <div data-aos="slide-left" className='flex w-1/2 gap-3 pl-3 items-center'>
          <Link to={"/"}>
-            <button type="button"  class="py-4 pl-2 text-gray-700 text-md rounded-ss-lg dark:bg-gray-800 dark:text-gray-300">Sabaton</button>
+            <button type="button"  class="py-4 pl-2 text-gray-700 text-md rounded-ss-lg dark:bg-gray-800 dark:text-gray-300">
+              <img alt='logo' className='w-[100px] h-[34px] object-cover' src="https://res.cloudinary.com/dsps3itap/image/upload/v1744334880/sabaton-store-wide-300x102-1_1_psm1le.webp" />
+            </button>
         </Link>
       </div>
       <div className='w-1/2 flex gap-3 justify-end pr-6 items-center'>
