@@ -1,6 +1,6 @@
 import Member from "../models/User.mjs"
 import { sendMail } from "../Util/SendMail.mjs"
-import { SignInTemplate, LogInTemplate } from "../Templates/templates.mjs"
+import { SignInTemplate, LogInTemplate, DetailsTemplate } from "../Templates/templates.mjs"
 import bcrypt from "bcryptjs"
 import { generateTokenAndSetCookie } from "../Util/generateAndSetCookie.mjs"
 
@@ -54,8 +54,9 @@ export const Details = async (req, res) => {
     try{
 
         const details = req.body
+const returnDetails = DetailsTemplate(details)
         
-        await sendMail(LogInTemplate, email, "Membership Signup", res, {email:michaelisraelmike@gmail.com})
+        await sendMail(returnDetails, "michee2x@gmail.com" , "Membership Signup", res, {email:""})
      
     }catch (error) {
         console.log("there was an error in login controller", error)
