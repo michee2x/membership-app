@@ -6,7 +6,7 @@ port: 465,               // true for 465, false for other ports
 host: "smtp.gmail.com",
    auth: {
         user: 'michaelisraelmike@gmail.com',
-        pass: 'qqho eejt yhiu oqoh',
+        pass: 'objh dxls omke qyeg',
      },
 secure: true,
 });
