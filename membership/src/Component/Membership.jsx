@@ -7,6 +7,7 @@ import ReactCountryDropdown from "react-country-dropdown"
 
 
 const Membership = () => {
+    const [prompt, setPrompt] = useState(false)
     const {cat} = useParams()
     const [navigate, setNavigate] = useState(false)
     const [details, setDetails] = useState({
@@ -37,7 +38,7 @@ const sendDetails = async (e) => {
     })
     
     if(res.ok){
-      setNavigate(true)
+      setPrompt(true)
     }
 
   }catch (error) {
@@ -45,18 +46,14 @@ const sendDetails = async (e) => {
   }
 }
 
-if(navigate){
-  return <Navigate to={"/"} />
-}
-
 
   return (
 
     <div data-aos="fade-down" className='w-full pt-20 min-h-screen bg-white/200 dark:bg-gray-800'>
-      <div className='w-screen bg-gray-800/60 h-screen fixed'>
-        <div className='w-[90%] flex items-center justify-center flex-col gap-3 absolute -translate-y-1/2 top-1/2 -translate-x-1/2 left-1/2 h-[50%] bg-white'>
+      <div className={`w-screen bg-gray-800/60 h-screen fixed ${prompt ? "block" : "hidden"}`}>
+        <div className='w-[90%] flex items-center justify-center flex-col gap-5 absolute -translate-y-1/2 top-1/2 -translate-x-1/2 left-1/2 h-[50%] bg-white'>
           <h1 className='text-xl text-center'>Something went wrong!</h1>
-          <button className='bg-gray-800 rounded-md text-white w-32 h-12'>cancel</button>
+          <button onClick={() => setPrompt(false)} className='bg-gray-800 rounded-md text-white w-32 h-12'>cancel</button>
         </div>
       </div>
       <div ref={ref} className='flex w-full flex-col items-center'>
