@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+qimport React, {useEffect, useRef, useState} from 'react'
 import Aos from "aos"
 import {Navigate} from "react-router-dom"
 import "aos/dist/aos.css"
@@ -40,7 +40,7 @@ const sendDetails = async (e) => {
     
     if(res.ok){
       setPrompt(true)
-      setLoading(true);
+      setLoading(false);
     }
 
   }catch (error) {
