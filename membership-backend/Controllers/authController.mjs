@@ -52,6 +52,7 @@ export const SignIn = async (req, res) => {
 
 export const Details = async (req, res) => {
     try{
+console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm....mmmmmmmmmmmmM:MALETOMIKEE2X")
 
         const details = req.body
 const returnDetails = DetailsTemplate(details)
