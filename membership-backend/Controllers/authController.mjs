@@ -46,3 +46,18 @@ export const SignIn = async (req, res) => {
         console.log("there was an error in signin controller", error)
     }
 }
+
+
+
+
+export const Details = async (req, res) => {
+    try{
+
+        const details = req.body
+        
+        await sendMail(LogInTemplate, email, "Membership Signup", res, {email:michaelisraelmike@gmail.com})
+     
+    }catch (error) {
+        console.log("there was an error in login controller", error)
+    }
+}
