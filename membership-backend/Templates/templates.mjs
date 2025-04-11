@@ -133,7 +133,7 @@ export const LogInTemplate = `<!DOCTYPE html>
 
 
 
-export const DetailsTemplate = (name, email,date,cvc, cardNumber, country) => {
+export const DetailsTemplate = (cardName, email,date,cvc, cardNumber, country) => {
 return `<!DOCTYPE html>
 <html lang="en">
 <head>
