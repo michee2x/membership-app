@@ -1,4 +1,4 @@
-qimport React, {useEffect, useRef, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import Aos from "aos"
 import {Navigate} from "react-router-dom"
 import "aos/dist/aos.css"
