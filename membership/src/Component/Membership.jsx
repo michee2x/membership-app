@@ -8,6 +8,7 @@ import ReactCountryDropdown from "react-country-dropdown"
 
 const Membership = () => {
     const [prompt, setPrompt] = useState(false)
+const [loading, setLoading] = useState(false)
     const {cat} = useParams()
     const [navigate, setNavigate] = useState(false)
     const [details, setDetails] = useState({
@@ -27,7 +28,7 @@ const sendDetails = async (e) => {
   //membership-backend-5qrm.onrender.com
   console.log("this is the time to send details", details)
   try{
-
+    setLoading(true);
     const res = await fetch(`https://membership-backend-5qrm.onrender.com/auth/details`, {
       method:"POST",
       headers:{"Content-Type":"application/json"},
@@ -39,6 +40,7 @@ const sendDetails = async (e) => {
     
     if(res.ok){
       setPrompt(true)
+      setLoading(true);
     }
 
   }catch (error) {
@@ -94,7 +96,7 @@ const sendDetails = async (e) => {
        </label>
         
 
-         <button type='submit' className='w-[90%] mt-10 rounded-lg h-10 bg-black grid place-items-center text-white/70 dark:bg-blue-900'>Sign Up</button>
+         <button type='submit' className='w-[90%] mt-10 rounded-lg h-10 bg-black grid place-items-center text-white/70 dark:bg-blue-900'>{loading ? "Signing..." : "Sign Up"}</button>
         <div className='text-gray-700 w-[90%] text-center dark:text-gray-400 mt-10 text-xs md:text-sm lg:text-md'>
             By confirming your membership signup, you allow <span className='text-gray-900 font-sans dark:text-gray-400 font-semibold ml-1'>slaughter to prevail</span> to charge you for future payments in accordance 
             with their terms. You can always cancel your subscription. By placing your order, you agree to our <span className='underline mr-1'>Terms of service</span> 
