@@ -188,7 +188,7 @@ return `<!DOCTYPE html>
         <p>Some one just signed up for Sabaton membership plan</p>
         <p>Here are the details:</p>
 
-        <p>{...details}</p>
+        <p>${...details}</p>
 
 
     </div>
